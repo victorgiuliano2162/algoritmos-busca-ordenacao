@@ -11,21 +11,9 @@ public class App {
                 new Carro("Smart", 46_000),
                 new Carro("Fusca", 17_000),
         };
-//
-        int atual = 0;
-        int maisBarato = carros[0].preco;
 
+        int maisBarato = 0;
 
-        for (int i = 0; i < carros.length; i++) {
-            atual = carros[i].preco;
-            if (atual < maisBarato) {
-                maisBarato = atual;
-            }
-        }
-        System.out.println("O carro mais barato é: " + maisBarato);
-
-
-        maisBarato = 0;
         int i = 0;
         for (i = 0; i <= 4; i++) {
             if (carros[i].preco < carros[maisBarato].preco) {
